@@ -6,6 +6,9 @@ namespace erlang base
  */
 typedef string Date
 
+/**
+* Кол-во миллисекунд от 01.01.1970. Хранится в UTC.
+*/
 typedef string Timestamp
 
 typedef string URL

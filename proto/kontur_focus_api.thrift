@@ -5,7 +5,7 @@ include "kontur_focus_req.thrift"
 include "kontur_focus_egr_details.thrift"
 include "kontur_focus_licences.thrift"
 
-enum EndPoint {
+enum KonturFocusEndPoint {
     /* Актуализация реквезитов */
     req
     /* Расширенные сведения на основе ЕГРЮЛ/ЕГРИП */

@@ -6,23 +6,23 @@ include "base_kontur_focus.thrift"
 
 struct License {
     // Номер лицензии
-    optional string official_num
+    1: optional string official_num
     // Название органа, выдавшего лицензию
-    optional string issuer_name
+    2: optional string issuer_name
     // Дата лицензии
-    optional base.Date date
+    3: optional base.Date date
     // Дата начала действия лицензии
-    optional base.Date date_start
+    4: optional base.Date date_start
     // Дата окончания действия лицензии
-    optional base.Date date_end
+    5: optional base.Date date_end
     // Строковое описание статуса
-    optional string status_description
+    6: optional string status_description
     // Описание вида деятельности
-    optional string activity
+    7: optional string activity
     // Описание видов работ/услуг
-    optional list<string> services
+    8: optional list<string> services
     // Места действия лицензии (массив неформализованных строк)
-    optional list<string> addresses
+    9: optional list<string> addresses
 }
 
 struct LicencesQuery {
@@ -31,8 +31,8 @@ struct LicencesQuery {
 }
 
 struct LicencesResponse {
-    required string inn
-    required string orgn
-    required base.URL focus_href
-    required list<License> licenses
+    1: required string inn
+    2: required string orgn
+    3: required base.URL focus_href
+    4: required list<License> licenses
 }

@@ -6,6 +6,8 @@ namespace erlang base
  */
 typedef string Date
 
+typedef string Timestamp
+
 typedef string URL
 
 typedef i8 Percent

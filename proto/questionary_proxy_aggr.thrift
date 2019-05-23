@@ -9,7 +9,7 @@ service QuestionaryProxyAggrHandler {
 
     kontur_focus_api.KonturFocusResponse RequestKonturFocus(
                 1: kontur_focus_api.KonturFocusRequest request,
-                2: kontur_focus_api.EndPoint endPoint
+                2: kontur_focus_api.KonturFocusEndPoint endPoint
             ) throws (1: KonturFocusRequestException ex)
 
 }

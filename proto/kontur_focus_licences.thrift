@@ -32,7 +32,7 @@ struct LicencesQuery {
 
 struct LicencesResponse {
     1: required string inn
-    2: required string orgn
+    2: required string ogrn
     3: required base.URL focus_href
     4: required list<License> licenses
 }

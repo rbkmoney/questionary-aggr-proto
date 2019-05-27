@@ -66,20 +66,21 @@ struct ReqHistory {
 struct RegLegalEntity {
     1: optional string kpp
     2: optional string okpo
-    3: optional string okfs
-    4: optional string oktmo
-    5: optional string okogu
-    6: optional string okopf
-    7: optional string opf
-    8: optional base_kontur_focus.LegalName legal_name
-    9: optional base_kontur_focus.LegalAddress legal_address
-    10: optional list<base_kontur_focus.Branch> branches
-    11: optional LegalEntityStatusDetail status
-    12: optional base.Date registration_date
-    13: optional base.Date dissolutionDate
-    14: optional list<base_kontur_focus.Head> heads
-    15: optional list<base_kontur_focus.ManagementCompany> management_companies
-    16: optional ReqHistory history
+    3: optional string okato
+    4: optional string okfs
+    5: optional string oktmo
+    6: optional string okogu
+    7: optional string okopf
+    8: optional string opf
+    9: optional base_kontur_focus.LegalName legal_name
+    10: optional base_kontur_focus.LegalAddress legal_address
+    11: optional list<base_kontur_focus.Branch> branches
+    12: optional LegalEntityStatusDetail status
+    13: optional base.Date registration_date
+    14: optional base.Date dissolutionDate
+    15: optional list<base_kontur_focus.Head> heads
+    16: optional list<base_kontur_focus.ManagementCompany> management_companies
+    17: optional ReqHistory history
 }
 
 union Contractor {

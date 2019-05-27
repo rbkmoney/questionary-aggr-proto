@@ -135,9 +135,9 @@ struct EgrDetailsLegalEntity {
     // Регистрационный номер ПФР
     2: required string pfr_reg_number
     // Регистрационный номер ФСС
-    3: required string fss_req_number
+    3: required string fss_reg_number
     // Регистрационный номер ФОМС
-    4: required string foms_req_number
+    4: required string foms_reg_number
     5: required base_kontur_focus.Activity activities
     6: required base_kontur_focus.RegInfo reg_info
     7: required base_kontur_focus.NalogRegBody nalog_reg_body

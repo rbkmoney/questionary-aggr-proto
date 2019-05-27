@@ -118,8 +118,8 @@ struct Branch {
 */
 struct BriefReportSummary {
     1: optional bool red_statements
-    2: optional bool yellow_statement
-    3: optional bool green_statement
+    2: optional bool yellow_statements
+    3: optional bool green_statements
 }
 
 /**

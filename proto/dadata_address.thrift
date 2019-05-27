@@ -37,6 +37,8 @@ struct AddressCityData {
     4: optional string city_type
     5: optional string city_type_full
     6: optional string city
+    // Административный округ
+    7: optional string city_area
 }
 
 struct AddressCityDistrictData {
@@ -90,6 +92,10 @@ struct AddressFlatData {
     2: optional string flat_type_full
     // Квартира
     3: optional string flat
+    // Площадь квартиры
+    4: optional string flat_area
+    // Рыночная стоимость квартиры
+    5: optional string flat_price
 }
 
 /**
@@ -115,14 +121,9 @@ struct AddressAdditionalData {
     4: optional string fias_code
     // Признак актуальности адреса в ФИАС
     5: optional i8 fias_actuality_state
-    // Административный округ
-    6: optional string city_aread
     7: optional string beltway_hit
     8: optional string beltway_distance
-    9: optional string flat_area
     10: optional string square_meter_price
-    // Рыночная стоимость квартиры
-    11: optional string flat_price
     12: optional string timezone
     13: optional list<AddressMetro> metro_list
 }

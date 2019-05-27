@@ -133,7 +133,7 @@ struct EgrDetailsHistory {
 struct EgrDetailsLegalEntity {
     1: required string okpo
     // Регистрационный номер ПФР
-    2: required string pft_reg_number
+    2: required string pfr_reg_number
     // Регистрационный номер ФСС
     3: required string fss_req_number
     // Регистрационный номер ФОМС

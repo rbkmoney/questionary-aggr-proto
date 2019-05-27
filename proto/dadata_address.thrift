@@ -110,24 +110,6 @@ struct AddressMetro {
     3: optional string distance
 }
 
-struct AddressAdditionalData {
-    // Координаты: шитора
-    1: optional string geo_lat
-    // Координаты: долгота
-    2: optional string geo_lon
-    // Код точности координат
-    3: optional i8 gc_geo
-    // Иерархический код адреса в ФИАС
-    4: optional string fias_code
-    // Признак актуальности адреса в ФИАС
-    5: optional i8 fias_actuality_state
-    7: optional string beltway_hit
-    8: optional string beltway_distance
-    10: optional string square_meter_price
-    12: optional string timezone
-    13: optional list<AddressMetro> metro_list
-}
-
 struct Address {
     // Адрес одной строкой
     1: required string value
@@ -159,7 +141,21 @@ struct Address {
     24: required string tax_office_legal
     25: required string source
     26: required list<string> history_values
-    27: optional AddressAdditionalData additional_data
+    // Координаты: шитора
+    27: optional string geo_lat
+    // Координаты: долгота
+    28: optional string geo_lon
+    // Код точности координат
+    29: optional i8 gc_geo
+    // Иерархический код адреса в ФИАС
+    30: optional string fias_code
+    // Признак актуальности адреса в ФИАС
+    31: optional i8 fias_actuality_state
+    32: optional string beltway_hit
+    33: optional string beltway_distance
+    34: optional string square_meter_price
+    35: optional string timezone
+    36: optional list<AddressMetro> metro_list
 }
 
 struct AddresLocationFilter {

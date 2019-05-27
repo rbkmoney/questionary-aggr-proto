@@ -51,17 +51,6 @@ struct PartyDocuments {
     3: optional base_dadata.Registration sif_registration
 }
 
-struct PartyAdditionalData {
-    1: optional list<PartyOkved> okveds
-    2: optional PartyAuthorities authorities
-    3: optional base_dadata.CitizenshipIP citizenship
-    4: optional list<base_dadata.Founder> founders
-    5: optional list<base_dadata.Manager> managers
-    6: optional PartyCapital capital
-    7: optional PartyDocuments documents
-    8: optional list<base_dadata.License> licenses
-}
-
 struct PartyContent {
     1: required string value
     2: required string unrestricted_value
@@ -82,7 +71,14 @@ struct PartyContent {
     16: required string okved
     17: required string okved_type
     18: required dadata_address.Address address
-    19: required PartyAdditionalData additional_data
+    19: optional list<PartyOkved> okveds
+    20: optional PartyAuthorities authorities
+    21: optional base_dadata.CitizenshipIP citizenship
+    22: optional list<base_dadata.Founder> founders
+    23: optional list<base_dadata.Manager> managers
+    24: optional PartyCapital capital
+    25: optional PartyDocuments documents
+    26: optional list<base_dadata.License> licenses
 }
 
 struct PartyQuery {

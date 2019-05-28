@@ -146,7 +146,7 @@ struct Address {
     // Координаты: долгота
     28: optional string geo_lon
     // Код точности координат
-    29: optional i8 gc_geo
+    29: optional i8 qc_geo
     // Иерархический код адреса в ФИАС
     30: optional string fias_code
     // Признак актуальности адреса в ФИАС

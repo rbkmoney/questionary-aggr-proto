@@ -141,7 +141,7 @@ struct Address {
     24: required string tax_office_legal
     25: required string source
     26: required list<string> history_values
-    // Координаты: шитора
+    // Координаты: широта
     27: optional string geo_lat
     // Координаты: долгота
     28: optional string geo_lon
@@ -151,7 +151,9 @@ struct Address {
     30: optional string fias_code
     // Признак актуальности адреса в ФИАС
     31: optional i8 fias_actuality_state
+    // Внутри кольцевой
     32: optional string beltway_hit
+    // Расстояние от кольцевой в километрах
     33: optional string beltway_distance
     34: optional string square_meter_price
     35: optional string timezone

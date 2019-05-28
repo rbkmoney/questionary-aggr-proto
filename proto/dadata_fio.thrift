@@ -11,7 +11,7 @@ struct FioContent {
     5: optional string patronymic
     6: optional base_dadata.Gender gender
     // Код качества
-    7: optional i8 gc
+    7: optional i8 qc
 }
 
 struct FioQuery {

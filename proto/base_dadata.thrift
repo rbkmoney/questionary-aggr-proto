@@ -30,7 +30,7 @@ struct Opf {
     1: optional string code
     2: optional string full_name
     3: optional string short_name
-    4: optional string type;
+    4: optional string type
 }
 
 /**

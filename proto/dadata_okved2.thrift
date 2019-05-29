@@ -15,7 +15,8 @@ struct OkvedContent {
 }
 
 struct OkvedQueryFilter {
-    1: optional string razdel
+    // Код раздела
+    1: optional string section
 }
 
 struct OkvedQuery {

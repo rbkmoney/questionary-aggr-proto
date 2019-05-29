@@ -77,7 +77,7 @@ struct RegLegalEntity {
     11: optional list<base_kontur_focus.Branch> branches
     12: optional LegalEntityStatusDetail status
     13: optional base.Date registration_date
-    14: optional base.Date dissolutionDate
+    14: optional base.Date dissolution_date
     15: optional list<base_kontur_focus.Head> heads
     16: optional list<base_kontur_focus.ManagementCompany> management_companies
     17: optional ReqHistory history

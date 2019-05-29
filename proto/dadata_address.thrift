@@ -74,8 +74,11 @@ struct AddressStreetData {
 struct AddressHouseData {
     1: optional string house_fias_id
     2: optional string house_kladr_id
+    // Тип дома (сокращенный)
     3: optional string house_type
+    // Тип дома
     4: optional string house_type_full
+    // Дом
     5: optional string house
 }
 
@@ -83,6 +86,7 @@ struct AddressBlockData {
     // Тип корпуса/строения (сокращенный)
     1: optional string block_type
     2: optional string block_type_full
+    // Корпус/строение
     3: optional string block
 }
 

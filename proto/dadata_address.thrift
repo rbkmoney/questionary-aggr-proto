@@ -164,7 +164,7 @@ struct Address {
     36: optional list<AddressMetro> metro_list
 }
 
-struct AddresLocationFilter {
+struct AddressLocationFilter {
     1: optional string kladr_id
     2: optional string city_fias_id
     3: optional string area_fias_id
@@ -190,7 +190,7 @@ struct AddressQuery {
     // Количество возвращаемых подсказок
     2: optional i8 count
     // Ограничение области поиска
-    3: optional list<AddresLocationFilter> locations
+    3: optional list<AddressLocationFilter> locations
     4: optional list<base_dadata.LocationBoostFilter> locations_boost
     5: optional BoundType from_bound
     6: optional BoundType to_bound

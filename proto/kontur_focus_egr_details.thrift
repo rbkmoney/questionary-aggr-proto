@@ -7,7 +7,7 @@ include "base_kontur_focus.thrift"
 /**
 * Предшественники
 */
-struct Predecessors {
+struct Predecessor {
     // Наименование организации
     1: optional string name
     2: optional string inn
@@ -18,7 +18,7 @@ struct Predecessors {
 /**
 * Преемники
 */
-struct Successors {
+struct Successor {
     // Наименование организации
     1: optional string name
     2: optional string inn
@@ -147,8 +147,8 @@ struct EgrDetailsLegalEntity {
     11: required list<base_kontur_focus.FounderFL> founders_fl
     12: required list<base_kontur_focus.FounderUL> founders_ul
     13: required list<base_kontur_focus.FounderForeign> founders_foreign
-    14: required list<Predecessors> predecessors
-    15: required list<Successors> successors
+    14: required list<Predecessor> predecessors
+    15: required list<Successor> successors
     16: required list<EgrRecord> egr_records
     17: optional EgrDetailsHistory history
 }

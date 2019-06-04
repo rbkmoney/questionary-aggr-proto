@@ -111,7 +111,7 @@ struct AddressMetro {
     // Название линии
     2: optional string line
     // Расстояние до станции в километрах
-    3: optional double distance
+    3: optional string distance
 }
 
 struct Address {

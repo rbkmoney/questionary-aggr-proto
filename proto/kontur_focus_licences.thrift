@@ -36,3 +36,7 @@ struct LicencesResponse {
     3: required base.URL focus_href
     4: required list<License> licenses
 }
+
+struct LicencesResponses {
+    1: required list<LicencesResponse> licenseResponses
+}

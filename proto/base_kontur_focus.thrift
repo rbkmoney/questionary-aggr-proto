@@ -228,7 +228,7 @@ struct Activity {
 struct RegInfo {
     // Дата присвоения ОГРН
     1: optional base.Date ogrn_date
-    // Наименование органа, зарегистрировашего юридическое лицо
+    // Наименование органа, зарегистрировавшего юридическое лицо
     2: optional string reg_name
 }
 

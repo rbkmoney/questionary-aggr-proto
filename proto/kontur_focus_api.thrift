@@ -21,7 +21,7 @@ union KonturFocusRequest {
 }
 
 union KonturFocusResponse {
-    1: list<kontur_focus_req.RegResponse> req_response
-    2: list<kontur_focus_egr_details.EgrDetailsResponse> egr_details_response
-    3: list<kontur_focus_licences.LicencesResponse> licences_response
+    1: kontur_focus_req.ReqResponses req_responses
+    2: kontur_focus_egr_details.EgrDetailsResponses egr_details_responses
+    3: kontur_focus_licences.LicencesResponses licences_responses
 }

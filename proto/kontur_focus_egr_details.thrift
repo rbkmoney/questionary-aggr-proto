@@ -198,3 +198,7 @@ struct EgrDetailsResponse {
     3: required base.URL focus_href
     4: required Contractor contractor
 }
+
+struct EgrDetailsResponses {
+    1: required list<EgrDetailsResponse> egrDetailsResponses
+}

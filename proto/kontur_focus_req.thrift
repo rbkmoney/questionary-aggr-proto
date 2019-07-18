@@ -23,14 +23,15 @@ struct LegalEntityStatusDetail {
     // Неформализованное описание статуса
     1: optional string status
     2: optional bool reorganizing
-    3: optional bool dissolved
-    4: optional base.Date date
+    3: optional bool dissolving
+    4: optional bool dissolved
+    5: optional base.Date date
 }
 
 /**
 * Информация об индивидуальном предпринимателе - IP
 */
-struct RegIndividualEntity {
+struct ReqIndividualEntity {
     1: optional string fio
     2: optional string okpo
     3: optional string okato
@@ -63,7 +64,7 @@ struct ReqHistory {
 /**
 * Информация о юридическом лице - UL
 */
-struct RegLegalEntity {
+struct ReqLegalEntity {
     1: optional string kpp
     2: optional string okpo
     3: optional string okato
@@ -84,8 +85,8 @@ struct RegLegalEntity {
 }
 
 union Contractor {
-    1: RegIndividualEntity individual_entity
-    2: RegLegalEntity legal_entity
+    1: ReqIndividualEntity individual_entity
+    2: ReqLegalEntity legal_entity
 }
 
 struct ReqQuery {
@@ -93,11 +94,15 @@ struct ReqQuery {
     2: optional list<string> inn
 }
 
-struct RegResponse {
+struct ReqResponse {
     1: required string inn
     2: required string ogrn
     3: required base.URL focus_href
     4: required Contractor private_entity
     5: required base_kontur_focus.BriefReport brief_report
     6: required base_kontur_focus.ContactPhones contact_phones
+}
+
+struct ReqResponses {
+    1: required list<ReqResponse> reqResponses
 }

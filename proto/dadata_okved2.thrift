@@ -5,13 +5,12 @@ include "base_dadata.thrift"
 
 struct OkvedContent {
     1: required string value
-    2: required string unrestricted_value
     // Индекс (раздел + код)
-    3: required string idx
+    2: required string idx
     // Код раздела
-    4: required string razdel
-    5: required string kod
-    6: required string name
+    3: required string section
+    4: required string code
+    5: required string name
 }
 
 struct OkvedQueryFilter {

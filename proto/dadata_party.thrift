@@ -52,25 +52,25 @@ struct PartyDocuments {
 }
 
 struct PartyContent {
-    1: required string value
-    2: required string unrestricted_value
-    3: required string kpp
-    4: required base_dadata.Management management
-    5: required base_dadata.BranchType branch_type
+    1: optional string value
+    2: optional string unrestricted_value
+    3: optional string kpp
+    4: optional base_dadata.Management management
+    5: optional base_dadata.BranchType branch_type
     // Кол-во филиалов
-    6: required i32 branch_count
-    7: required base_dadata.HID hid
-    8: required base_dadata.DaDataState state
-    9: required base_dadata.Opf opf
-    10: required base_dadata.OrgName name
-    11: required string inn
-    12: required string ogrn
-    13: required base.Timestamp ogrn_date
-    14: required base_dadata.OrgType type
+    6: optional i32 branch_count
+    7: optional base_dadata.HID hid
+    8: optional base_dadata.DaDataState state
+    9: optional base_dadata.Opf opf
+    10: optional base_dadata.OrgName name
+    11: optional string inn
+    12: optional string ogrn
+    13: optional base.Timestamp ogrn_date
+    14: optional base_dadata.OrgType type
     15: optional string okpo
-    16: required string okved
-    17: required string okved_type
-    18: required dadata_address.Address address
+    16: optional string okved
+    17: optional string okved_type
+    18: optional dadata_address.Address address
     19: optional list<PartyOkved> okveds
     20: optional PartyAuthorities authorities
     21: optional base_dadata.CitizenshipIP citizenship

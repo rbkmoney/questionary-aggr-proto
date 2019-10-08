@@ -4,13 +4,13 @@ namespace erlang dadata_okved2
 include "base_dadata.thrift"
 
 struct OkvedContent {
-    1: required string value
+    1: optional string value
     // Индекс (раздел + код)
-    2: required string idx
+    2: optional string idx
     // Код раздела
-    3: required string section
-    4: required string code
-    5: required string name
+    3: optional string section
+    4: optional string code
+    5: optional string name
 }
 
 struct OkvedQueryFilter {

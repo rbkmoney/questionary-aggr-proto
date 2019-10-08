@@ -4,8 +4,8 @@ namespace erlang dadata_fio
 include "base_dadata.thrift"
 
 struct FioContent {
-    1: required string value
-    2: required string unrestricted_value
+    1: optional string value
+    2: optional string unrestricted_value
     3: optional string surname
     4: optional string name
     5: optional string patronymic

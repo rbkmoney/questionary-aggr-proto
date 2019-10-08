@@ -4,8 +4,8 @@ namespace erlang dadata_fms_unit
 include "base_dadata.thrift"
 
 struct FmsUnitContent {
-    1: required string value
-    2: required string unrestrictd_value
+    1: optional string value
+    2: optional string unrestrictd_value
     3: optional string code
     4: optional string name
     5: optional string region_code

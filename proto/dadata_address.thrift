@@ -120,31 +120,31 @@ struct Address {
     // Адрес одной строкой
     2: required string unrestricted_value
     // Индекс
-    3: required string postal_code
-    4: required string country
+    3: optional string postal_code
+    4: optional string country
     // Федеральный округ
-    5: required string federal_district
-    6: required AddressRegionData region
-    7: required AddressAreaData area
-    8: required AddressCityData city
-    9: required AddressCityDistrictData city_district
-    10: required AddressSettlementData settlement
-    11: required AddressStreetData street
-    12: required AddressHouseData house
-    13: required AddressBlockData block
-    14: required AddressFlatData flat_data
-    15: required string postal_box
-    16: required string fias_id
-    17: required i8 fias_level
-    18: required string kladr_id
-    19: required string geoname_id
-    20: required i8 capital_marker
-    21: required string okato
-    22: required string oktmo
-    23: required string tax_office
-    24: required string tax_office_legal
-    25: required string source
-    26: required list<string> history_values
+    5: optional string federal_district
+    6: optional AddressRegionData region
+    7: optional AddressAreaData area
+    8: optional AddressCityData city
+    9: optional AddressCityDistrictData city_district
+    10: optional AddressSettlementData settlement
+    11: optional AddressStreetData street
+    12: optional AddressHouseData house
+    13: optional AddressBlockData block
+    14: optional AddressFlatData flat_data
+    15: optional string postal_box
+    16: optional string fias_id
+    17: optional i8 fias_level
+    18: optional string kladr_id
+    19: optional string geoname_id
+    20: optional i8 capital_marker
+    21: optional string okato
+    22: optional string oktmo
+    23: optional string tax_office
+    24: optional string tax_office_legal
+    25: optional string source
+    26: optional list<string> history_values
     // Координаты: широта
     27: optional string geo_lat
     // Координаты: долгота

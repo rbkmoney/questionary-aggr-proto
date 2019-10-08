@@ -13,13 +13,13 @@ struct BankContent {
     4: required base_dadata.Payment payment
     5: required string bic
     6: required string swift
-    7: required string okpo
+    7: optional string okpo
     8: required string correspondent_account
     9: required string registration_number
     // Ссылка на РКЦ. Структура идентична структуре объекта банка
-    10: required string rkc
+    10: optional string rkc
     11: required dadata_address.Address address
-    12: required string phone
+    12: optional string phone
     13: required base_dadata.DaDataState status
 }
 

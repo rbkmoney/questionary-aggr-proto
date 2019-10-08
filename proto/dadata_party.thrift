@@ -67,7 +67,7 @@ struct PartyContent {
     12: required string ogrn
     13: required base.Timestamp ogrn_date
     14: required base_dadata.OrgType type
-    15: required string okpo
+    15: optional string okpo
     16: required string okved
     17: required string okved_type
     18: required dadata_address.Address address

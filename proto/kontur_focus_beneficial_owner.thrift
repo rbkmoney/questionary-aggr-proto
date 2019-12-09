@@ -8,7 +8,7 @@ struct BeneficialOwnerUl {
     1: optional string ogrn
     2: optional string inn
     // Полное наименование юридического лица
-    3: optional string fullname
+    3: optional string fullName
     // Размер доли в процентах. Доля вычисляется по цепочке учредителей и акционеров
     4: optional base.Percent share
     // Признак точной доли
@@ -26,7 +26,7 @@ struct BeneficialOwnerFl {
 * Конечные владельцы - иностранные компании
 */
 struct BeneficialOwnerForeign {
-    1: optional string fullname
+    1: optional string fullName
     2: optional string country
     3: optional base.Percent share
     4: optional bool is_accurate
@@ -36,7 +36,7 @@ struct BeneficialOwnerForeign {
 * Конечные владельцы - без категории. Это могут быть юрлица, физлица и иностранные лица
 */
 struct BeneficialOwnerOther {
-    1: optional string fullname
+    1: optional string fullName
     2: optional base.Percent share
     3: optional bool is_accurate
 }

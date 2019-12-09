@@ -12,14 +12,14 @@ struct BeneficialOwnerUl {
     // Размер доли в процентах. Доля вычисляется по цепочке учредителей и акционеров
     4: optional base.Percent share
     // Признак точной доли
-    5: optional bool isAccurate
+    5: optional bool is_accurate
 }
 
 struct BeneficialOwnerFl {
     1: optional string fio
     2: optional string innfl
     3: optional base.Percent share
-    4: optional bool isAccurate
+    4: optional bool is_accurate
 }
 
 /**
@@ -29,7 +29,7 @@ struct BeneficialOwnerForeign {
     1: optional string full_name
     2: optional string country
     3: optional base.Percent share
-    4: optional bool isAccurate
+    4: optional bool is_accurate
 }
 
 /**
@@ -38,7 +38,7 @@ struct BeneficialOwnerForeign {
 struct BeneficialOwnerOther {
     1: optional string full_name
     2: optional base.Percent share
-    3: optional bool isAccurate
+    3: optional bool is_accurate
 }
 
 struct BeneficialOwners {

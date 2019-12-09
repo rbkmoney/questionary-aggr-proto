@@ -149,8 +149,8 @@ struct StatedCapital {
 struct Share {
     1: optional base.Sum sum
     2: optional base.Percent percentage_plain
-    3: optional base.Percent percentage_nominator
-    4: optional base.Percent percentage_denominator
+    3: optional i32 percentage_nominator
+    4: optional i32 percentage_denominator
 }
 
 /**

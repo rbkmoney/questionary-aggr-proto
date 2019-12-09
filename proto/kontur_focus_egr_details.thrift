@@ -94,9 +94,9 @@ struct ShareHolderOther {
 */
 struct ShareHolders {
     1: optional base.Date date
-    2: optional list<ShareHolderFl> share_holders_fl
-    3: optional list<ShareHolderUL> share_holders_ul
-    4: optional list<ShareHolderOther> share_holders_other
+    2: optional list<ShareHolderFl> shareholders_fl
+    3: optional list<ShareHolderUL> shareholders_ul
+    4: optional list<ShareHolderOther> shareholders_other
 }
 
 /**
@@ -120,10 +120,7 @@ struct EgrRecord {
 }
 
 struct EgrDetailsHistory {
-    1: required base.Date date
-    2: optional list<ShareHolderFl> shareholders_fl
-    3: optional list<ShareHolderUL> shareholders_ul
-    4: optional list<ShareHolderOther> shareholders_other
+    1: optional ShareHolders shareholders
     5: optional list<base_kontur_focus.StatedCapital> stated_capitals
     6: optional list<base_kontur_focus.FounderFL> founders_fl
     7: optional list<base_kontur_focus.FounderUL> founders_ul
@@ -142,7 +139,7 @@ struct EgrDetailsLegalEntity {
     6: required base_kontur_focus.RegInfo reg_info
     7: required base_kontur_focus.NalogRegBody nalog_reg_body
     8: required base_kontur_focus.RegBody reg_body
-    9: required ShareHolders share_holders
+    9: required ShareHolders shareholders
     10: required base_kontur_focus.StatedCapital stated_capital
     11: required list<base_kontur_focus.FounderFL> founders_fl
     12: required list<base_kontur_focus.FounderUL> founders_ul

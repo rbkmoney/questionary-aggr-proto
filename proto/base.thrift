@@ -16,6 +16,6 @@ typedef string Timestamp
 
 typedef string URL
 
-typedef i8 Percent
+typedef double Percent
 
 typedef i64 Sum

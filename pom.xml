@@ -14,32 +14,25 @@
     <version>SNAPSHOT</version>
     <packaging>jar</packaging>
 
-
     <name>Questionary aggr</name>
     <description>Generates jar artifact containing compiled thrift classes based on generated thrift IDL files</description>
-
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
-        <!--rbkmoney-->
         <dependency>
             <groupId>com.rbkmoney.woody</groupId>
             <artifactId>woody-thrift</artifactId>
             <version>LATEST</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>com.rbkmoney</groupId>
-            <artifactId>damsel</artifactId>
-            <version>1.268-45c8524</version>
-        </dependency>
     </dependencies>
 
     <build>
         <finalName>${project.artifactId}</finalName>
+
         <plugins>
             <!-- THRIFT -->
             <plugin>
@@ -49,7 +42,7 @@
                 <configuration>
                     <generator>java:fullcamel</generator>
                     <thriftSourceRoot>${project.basedir}/proto</thriftSourceRoot>
-                    <thriftExecutable></thriftExecutable>
+                    <thriftExecutable>${path_to_thrift}</thriftExecutable>
                 </configuration>
                 <executions>
                     <execution>
@@ -61,6 +54,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>

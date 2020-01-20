@@ -12,18 +12,24 @@ exception DaDataRequestException {
     1: required string error_msg
 }
 
+exception KonturFocusNotFound {
+    1: required string error_msg
+}
+
+exception DaDataNotFound {
+    1: required string error_msg
+}
+
 service QuestionaryAggrProxyHandler {
 
     kontur_focus_api.KonturFocusResponse RequestKonturFocus(
                 1: kontur_focus_api.KonturFocusRequest request,
                 2: kontur_focus_api.KonturFocusEndPoint endpoint
-            ) throws (1: KonturFocusRequestException ex)
+            ) throws (1: KonturFocusRequestException ex1, 2: KonturFocusNotFound ex2)
 
     dadata_api.DaDataResponse RequestDaData(
                 1: dadata_api.DaDataRequest request,
                 2: dadata_api.DaDataEndpoint endpoint
-            ) throws (1: DaDataRequestException ex)
+            ) throws (1: DaDataRequestException ex1, 2: DaDataNotFound ex2)
 
 }
-
-

@@ -13,11 +13,9 @@ exception DaDataInvalidRequest {
 }
 
 exception KonturFocusNotFound {
-    1: required string error_msg
 }
 
 exception DaDataNotFound {
-    1: required string error_msg
 }
 
 service QuestionaryAggrProxyHandler {
